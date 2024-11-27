@@ -1,0 +1,277 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 1rem 2rem;
+}
+
+.navbar-logo h1 {
+    color: #efefef;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links li a {
+    color: #f4f4f9;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #e94560;
+}
+
+
+/* Content Styling */
+.content {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    background-color: #1a1a2e;
+    color: #f4f4f9;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.jumbotron h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.jumbotron p {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+/* Jumbotron Button Styling */
+.jumbotron-button {
+    background-color: #e94560;
+    color: #f4f4f9;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 2rem; /* Adds spacing from paragraph */
+    display: inline-block;
+    text-align: center;
+}
+
+.jumbotron-button a {
+    color: inherit; /* Matches the button text color */
+    text-decoration: none;
+}
+
+.jumbotron-button:hover {
+    background-color: #ff6b81;
+    transform: scale(1.05);
+}
+
+.jumbotron-button:active {
+    transform: scale(0.98);
+}
+
+.intro h3 {
+    font-size: 3.5em;
+}
+
+.intro p {
+    font-size: 1.5em;
+}
+
+/* Topic Section Styling */
+
+.topics {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.topic {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 10vw;
+    display: flex;
+}
+
+.topic-text {
+    margin: 30px;
+    text-align: left;
+    position: relative;
+}
+
+.topic-button-container {
+    text-align: center; /* Centers the button */
+    margin-top: 1.5rem; /* Adds spacing above the button */
+}
+
+.topic-text h4 {
+    font-size: 3.5em;
+}
+
+.topic-text p {
+    font-size: 1.5em;
+}
+
+.topic-text li {
+    font-size: 1.5em;
+}
+
+.topic-images {
+    width: 400px;
+    height: 400px;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.topic h4 a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.topic h4 a:hover {
+    color: #e94560;
+}
+
+.topic p {
+    color: #555;
+}
+/* Button Styling */
+.topic-button {
+    background-color: #1a1a2e;
+    color: #f4f4f9;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Link Styling Inside Button */
+.topic-button a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+/* Hover and Active Effects */
+.topic-button:hover {
+    background-color: #e94560;
+    transform: scale(1.05);
+}
+
+.topic-button:active {
+    transform: scale(0.98);
+}
+
+.motherboard-table-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.motherboard-table {
+    margin: 0 auto; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    text-align: left;
+}
+
+.motherboard-table th, .motherboard-table td {
+    padding: 12px; 
+    border: 1px solid #ddd; 
+}
+
+.motherboard-table th {
+    background-color: #f2f2f2; 
+    font-weight: bold; 
+}
+
+.computer-table-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.computer-table {
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.computer-table th, .computer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.computer-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.computer-table td {
+  text-align: left;
+}
+
+
+.references {
+    text-align: left;
+    margin: 100px 10vw;
+}
+/* Responsive Adjustments */
+@media (max-width: 1400px) {
+    .navbar-links {
+        display: none; /* Hide links on small screens */
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .topic {
+        text-align: center;
+        display: block;
+    }
+    .topic img {
+        width: 600px;
+        height: 500px;
+        max-width: 800px;
+        max-height: 800px;
+    }
+}
